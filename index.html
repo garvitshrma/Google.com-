@@ -4,20 +4,105 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>AnimeSearch</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Permanent+Marker&family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
+    <!-- Floating particles -->
+    <div class="particles">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+    <!-- Speed lines background -->
+    <div class="speed-lines"></div>
+
+    <!-- Top nav -->
+    <nav class="top-nav">
+        <span class="nav-link">About</span>
+        <span class="nav-link">Search</span>
+        <div class="nav-right">
+            <span class="nav-link">Sign In</span>
+            <span class="nav-btn">Level Up ↑</span>
+        </div>
+    </nav>
+
+    <!-- Anime character placeholder (left side) -->
+    <div class="char-left">
+        <div class="char-box">
+            <img src="images/2.jpg">
+            <div class="char-hint">e.g. Naruto / Goku / L</div>
+        </div>
+    </div>
+
+    <!-- Anime character placeholder (right side) -->
+    <div class="char-right">
+        <div class="char-box">
+            <img src="images/1.jpg">
+            <div class="char-hint">e.g. Zero Two / Mikasa</div>
+        </div>
+    </div>
+
+    <!-- Main content -->
     <div class="main">
-        <img src="images/google.webp" class="logo">
-        <input type="text" class="input-field">
-        <div class = "sinput">
-            <button class="search">Google Search</button>
-            <button class="lucky">I'm Feeling Lucky</button>
+
+        <!-- Shonen-style logo -->
+        <div class="logo-wrap">
+            <div class="logo-glow"></div>
+            <h1 class="logo-text">
+                <span class="l1">G</span><span class="l2">O</span><span class="l3">O</span><span class="l4">G</span><span class="l5">L</span><span class="l6">E</span>
+            </h1>
+            <div class="logo-sub">SHONEN EDITION</div>
+            <div class="logo-tag">— POWER LEVEL: OVER 9000 —</div>
         </div>
 
-    </div>
-</body>
+        <!-- Search bar -->
+        <div class="search-wrap">
+            <div class="search-aura"></div>
+            <div class="input-container">
+                <span class="search-icon">🔍</span>
+                <input type="text" class="input-field" placeholder="Unleash your search jutsu...">
+                <span class="chakra-bolt">⚡</span>
+            </div>
+        </div>
 
+        <!-- Buttons -->
+        <div class="sinput">
+            <button class="search">
+                <span class="btn-bg"></span>
+                <span class="btn-text">⚡ Google Search</span>
+            </button>
+            <button class="lucky">
+                <span class="btn-bg"></span>
+                <span class="btn-text">🍀 I'm Feeling Lucky</span>
+            </button>
+        </div>
+
+        <!-- Manga panel speech bubble -->
+        <div class="speech-bubble">
+            "The search that never gives up... that's my ninja way!"
+            <div class="bubble-arrow"></div>
+        </div>
+
+        <!-- Screentone effect boxes -->
+        <div class="manga-panel panel-tl"></div>
+        <div class="manga-panel panel-br"></div>
+    </div>
+
+    <!-- Bottom bar -->
+    <footer class="footer">
+        <span>India</span>
+        <div class="footer-right">
+            <span>Advertising</span>
+            <span>Business</span>
+            <span>Privacy</span>
+            <span>Settings</span>
+        </div>
+    </footer>
+
+</body>
 </html>
